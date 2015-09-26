@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "Lcf.vs",
+    "email": "michael.rouges@gmail.com"
+  },
+  "name": "sbind",
+  "description": "A tiny but powerful JavaScript module, to play with Function.bind()",
+  "homepage": "https://github.com/Lcfvs/",
+  "keywords": [
+    "Function",
+    "bind",
+    "utils",
+    "Function.bind",
+    "detach",
+    "call",
+    "apply",
+    "all",
+    "array",
+    "arguments"
+  ],
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Lcfvs/sbind.git"
+  },
+  "main": "sbind.js",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "readmeFilename": "readme.md",
+  "bugs": {
+    "url": "https://github.com/Lcfvs/sbind/issues"
+  }
+}
