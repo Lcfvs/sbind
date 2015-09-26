@@ -32,5 +32,6 @@
   "readmeFilename": "readme.md",
   "bugs": {
     "url": "https://github.com/Lcfvs/sbind/issues"
-  }
+  },
+  "license": "MIT"
 }
