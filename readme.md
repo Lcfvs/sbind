@@ -18,7 +18,7 @@ You can use it like a `Function.call()` or play with arrays or arguments objects
 
 ## Reference :
 
-### sbind.call(method, ...) :
+### sbind.call(method) :
 
 ```JavaScript
 var call,
@@ -33,7 +33,7 @@ console.log(substring('Hello world!', 0, 5)); // 'Hello'
 console.log(substring('Hello world!', 6, 11)); // 'world'
 ```
 
-### sbind.bind(method, ...) :
+### sbind.bind(method) :
 
 ```JavaScript
 var bind,
@@ -50,7 +50,7 @@ console.log(substringFromHello(0, 5)); // 'Hello'
 console.log(substringFromHello(6, 11)); // 'world'
 ```
 
-### sbind.apply(method, ...) :
+### sbind.apply(method) :
 
 ```JavaScript
 var apply,
@@ -65,7 +65,7 @@ console.log(substring('Hello world!', [0, 5])); // 'Hello'
 console.log(substring('Hello world!', [6, 11])); // 'world'
 ```
 
-### sbind.all(method, ...) :
+### sbind.all(method) :
 
 ```JavaScript
 var all,

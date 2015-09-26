@@ -1,8 +1,5 @@
 {
-  "author": {
-    "name": "Lcf.vs",
-    "email": "michael.rouges@gmail.com"
-  },
+  "author": "Lcf.vs <michael.rouges@gmail.com>",
   "name": "sbind",
   "description": "A tiny but powerful JavaScript module, to play with Function.bind()",
   "homepage": "https://github.com/Lcfvs/",
@@ -29,9 +26,11 @@
   },
   "dependencies": {},
   "devDependencies": {},
-  "readmeFilename": "readme.md",
   "bugs": {
     "url": "https://github.com/Lcfvs/sbind/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
