@@ -11,7 +11,7 @@ https://github.com/Lcfvs/sbind
         var sbind,
             add,
             binder,
-            detach,
+            unbind,
             call,
             apply,
             bind;
@@ -20,24 +20,24 @@ https://github.com/Lcfvs/sbind
         add = Object.defineProperty.bind(null, sbind);
         binder = Function.bind;
 
-        add('detach', {
-            value: detach = binder.bind(binder)
+        add('unbind', {
+            value: unbind = binder.bind(binder)
         });
 
         add('call', {
-            value: call = detach(Function.call)
+            value: call = unbind(Function.call)
         });
 
         add('apply', {
-            value: apply = detach(Function.apply)
+            value: apply = unbind(Function.apply)
         });
 
         add('bind', {
-            value: bind = detach(Function.bind)
+            value: bind = unbind(Function.bind)
         });
 
         add('all', {
-            value: detach(binder, Function.apply)
+            value: unbind(Function.apply.bind)
         });
         
         return sbind;
