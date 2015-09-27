@@ -40,7 +40,7 @@ https://github.com/Lcfvs/sbind
         });
 
         add('all', {
-            value: detach(apply)
+            value: detach(apply, null)
         });
         
         return sbind;
