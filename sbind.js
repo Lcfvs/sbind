@@ -14,14 +14,17 @@ https://github.com/Lcfvs/sbind
             binder,
             detach,
             call,
-            apply;
+            apply,
+            bind;
 
         sbind = Object.create(null);
         add = Object.defineProperty.bind(null, sbind);
         binder = Function.bind;
 
         add('detach', {
-            value: detach = binder.bind(binder)
+            value: detach = function (method) {
+                return binder.bind(method);
+            }
         });
 
         add('call', {
@@ -33,11 +36,11 @@ https://github.com/Lcfvs/sbind
         });
 
         add('bind', {
-            value: detach(Function.bind)
+            value: bind = detach(Function.bind)
         });
 
         add('all', {
-            value: detach(apply, call)
+            value: detach(apply)
         });
         
         return sbind;
