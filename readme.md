@@ -27,9 +27,9 @@ var detach,
 
 detach = require('sbind').detach;
 // we create a context-free function to extract substrings
-substring = all(String.prototype.substring);
+substring = detach(String.prototype.substring);
 
-console.log(substring.name); // 'substring'
+console.log(substring('substring')(0, 6)); // 'substr'
 ```
 
 ### sbind.call(method) :
