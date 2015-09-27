@@ -18,6 +18,20 @@ You can use it like a `Function.call()` or play with arrays or arguments objects
 
 ## Reference :
 
+### sbind.detach(method) :
+
+```JavaScript
+var detach,
+    substring,
+    substringFromHello;
+
+detach = require('sbind').detach;
+// we create a context-free function to extract substrings
+substring = all(String.prototype.substring);
+
+console.log(substring.name); // 'substring'
+```
+
 ### sbind.call(method) :
 
 ```JavaScript

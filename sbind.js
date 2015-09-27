@@ -21,7 +21,7 @@ https://github.com/Lcfvs/sbind
         binder = Function.bind;
 
         add('detach', {
-            value: detach = binder.bind.bind(binder)
+            value: detach = binder.bind(binder)
         });
 
         add('call', {
@@ -51,5 +51,5 @@ https://github.com/Lcfvs/sbind
         return module.exports = main();
     }
 
-    return global = main();
+    return global.sbind = main();
 }(this));
