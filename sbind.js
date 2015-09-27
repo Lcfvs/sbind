@@ -1,6 +1,5 @@
 /*
-Copyright 2015 Lcf.vs
-Released under the MIT license
+Copyright MIT 2015 Lcf.vs
 https://github.com/Lcfvs/sbind
 */
 (function (global) {
@@ -22,9 +21,7 @@ https://github.com/Lcfvs/sbind
         binder = Function.bind;
 
         add('detach', {
-            value: detach = function (method) {
-                return binder.bind(method);
-            }
+            value: detach = binder.bind(binder)
         });
 
         add('call', {
@@ -40,7 +37,7 @@ https://github.com/Lcfvs/sbind
         });
 
         add('all', {
-            value: detach(apply, null)
+            value: detach(binder, Function.apply)
         });
         
         return sbind;
