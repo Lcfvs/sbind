@@ -14,7 +14,8 @@ https://github.com/Lcfvs/sbind
             unbind,
             call,
             apply,
-            bind;
+            bind,
+            slice;
 
         sbind = Object.create(null);
         add = Object.defineProperty.bind(null, sbind);
@@ -36,8 +37,20 @@ https://github.com/Lcfvs/sbind
             value: bind = unbind(Function.bind)
         });
 
+        slice = call(Array.prototype.slice);
+        
         add('all', {
-            value: unbind(Function.apply.bind)
+            value: function (method) {
+                return function (instance) {
+                    var args;
+                    
+                    args = slice(arguments, 1);
+                    
+                    return function (params) {
+                        return method.apply(instance, args.concat(params));
+                    };
+                };
+            }
         });
         
         return sbind;
