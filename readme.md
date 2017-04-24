@@ -1,7 +1,7 @@
 # sbind (aka speedy-bind)
 
 [![Actual version published on NPM](https://badge.fury.io/js/sbind.png)](https://www.npmjs.org/package/sbind)
-[![npm module downloads per month](http://img.shields.io/npm/dm/sbind.svg)](https://www.npmjs.org/package/sbind)
+[![Downloads](https://img.shields.io/npm/dt/sbind.svg?style=plastic)]()
 [![npm module dependencies](https://david-dm.org/Lcfvs/sbind.png)](https://www.npmjs.org/package/sbind)
 
 A tiny but powerful JavaScript module, to play with  `Function.bind()`, under the MIT license.
